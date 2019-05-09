@@ -768,18 +768,14 @@ article{
             margin-right: 0;
         }
         .quarter{
-            .square {
+            .square,
+	    .square-img {
                 position: relative;
                 display:block;
                 content:'\00a0';
                 width:100%;
                 line-height: 0;
                 max-height: (4 * $spacing-l);
-                &:after {
-                    content: "";
-                    display: block;
-                    padding-bottom: 100%;
-                }
                 .squarecontent {
                     position:absolute;
                     height:100%;
@@ -788,6 +784,11 @@ article{
                     line-height:1em;
                 }
             }
+	    .square:after {
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                }
         }
     }
 }
