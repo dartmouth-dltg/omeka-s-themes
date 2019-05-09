@@ -776,6 +776,10 @@ article{
                 width:100%;
                 line-height: 0;
                 max-height: (4 * $spacing-l);
+		&:after {
+                    display: block;
+                    padding-bottom: 100%;
+                }
                 .squarecontent {
                     position:absolute;
                     height:100%;
@@ -786,8 +790,6 @@ article{
             }
 	    .square:after {
                     content: "";
-                    display: block;
-                    padding-bottom: 100%;
                 }
         }
     }
