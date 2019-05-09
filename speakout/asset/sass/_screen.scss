@@ -789,6 +789,9 @@ article{
                     line-height:1em;
                 }
             }
+	    .square-img img {
+		    max-height: 100%;
+		}
 	    .square:after {
                     padding-bottom: 100%;
                 }
